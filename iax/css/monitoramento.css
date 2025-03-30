@@ -54,13 +54,17 @@ tr:hover {
 }
 
 button {
-    background-color: #8819ef;
+    background-color: #9b59b6;
     color: white;
     font-size: 16px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #8819ef;
 }
 
 a {
@@ -71,4 +75,9 @@ a {
     padding: 10px 20px;
     border-radius: 5px;
     transition: 0.3s;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: #8819ef;
 }

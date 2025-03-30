@@ -24,6 +24,66 @@ h2 {
     border-radius: 8px;
 }
 
+.dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    margin: 20px;
+}
+
+.dropdown-menu>li {
+    position: relative;
+}
+
+.dropdown-menu>li>a {
+    color: #a855f7;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e1e2e;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.imagem-menu {
+    height: 35px;
+    width: 35px;
+    ;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.dropdown-menu>li:hover .submenu {
+    display: block;
+}
+
+.submenu li a:hover {
+    display: block;
+    color: #a855f7;
+}
+
 .botao {
     display: flex;
     justify-content: center;

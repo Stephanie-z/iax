@@ -12,9 +12,21 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px 5px 20px;
-    width: 90vw;
+    width: 95vw;
     height: 15vh;
     background-color: #1a1a1a;
+  }
+
+  .hd2 a {
+    padding-left: 10px;
+    color: #a855f7;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .hd2 a:hover {
+    color: #7d3c98;
   }
 
   h1 {
@@ -55,6 +67,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    position: fixed;
   }
 
   .dropdown-menu>li {
@@ -66,7 +79,6 @@
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
-    background-color: #1a1a1a;
     display: inline-block;
   }
 
@@ -81,6 +93,12 @@
     display: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 10;
+  }
+
+  .imagem-menu {
+    height: 35px;
+    width: 35px;
+    ;
   }
 
   .submenu li {
@@ -148,6 +166,10 @@
   .home h2 {
     color: #a855f7;
     font-size: 2.5em;
+  }
+
+  .home p {
+    padding: 0 50px 0 50px;
   }
 
   .btn {
