@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COBIT - Governança de TI</title>
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #9d4edd;
+      margin-bottom: 40px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: #9d4edd;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      max-width: 900px;
+      border-collapse: collapse;
+      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1a1a1a;
+      color: #9d4edd;
+    }
+
+    td {
+      background-color: #111;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(157, 78, 221, 0.3);
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.7s ease;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-container {
+      margin-bottom: 50px;
+      padding: 30px;
+      border-radius: 16px;
+      transition: box-shadow 0.4s ease, transform 0.3s ease;
+      background-color: #1a1a1a;
+    }
+
+    .section-container:hover {
+      box-shadow: 0 0 25px #9d4edd;
+      transform: scale(1.01);
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      background-color: #4a148c;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #6a1b9a;
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    button.fade {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    button.fade.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="section">COBIT - Governança de TI</h1>
+
+  <main>
+    <div class="section-container section">
+      <h2>O que é COBIT?</h2>
+            <p>COBIT (Control Objectives for Information and Related Technology) 
+            é um framework criado pela ISACA que ajuda organizações a governar e
+            gerenciar a TI de forma eficaz. Ele garante que os serviços de TI 
+            estejam alinhados com os objetivos do negócio, trazendo mais segurança,
+            controle e resultados.</p>
+
+            <p>Todas as funções de administração das informações da empresa,
+            o controle dos serviços de TI, a tecnologia padronizada
+            entre setores, a segurança das informações, administração
+            de dados do cliente
+            e gestão de TI fazem parte do framework.</p>
+
+            <p>Ele foi criado para garantir que a tecnologia da informação 
+            esteja alinhada com os objetivos de negócios, ao mesmo tempo que gerencia riscos e melhora a eficiência dos processos.</p>    </div>
+
+    <div class="section-container section">
+      <h2>🧩 Funcionalidades e Benefícios do COBIT</h2>
+      <table>
+        <thead>
+          <tr><th>Funcionalidade</th><th>Descrição</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Governança de TI</td><td>Estabelece responsabilidades claras para decisões estratégicas relacionadas à tecnologia.</td></tr>
+          <tr><td>Gestão de Riscos</td><td>Ajuda a identificar, avaliar e mitigar riscos associados ao uso da TI.</td></tr>
+          <tr><td>Entrega de Valor</td><td>Garante que os investimentos em TI realmente contribuam com resultados para o negócio.</td></tr>
+          <tr><td>Alinhamento Estratégico</td><td>Assegura que a TI esteja sincronizada com os objetivos e metas organizacionais.</td></tr>
+          <tr><td>Desempenho e Conformidade</td><td>Monitora se a TI está entregando conforme o esperado e em conformidade com normas e leis.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-container section">
+      <h2>As 4 Funcionalidades do COBIT (Também chamadas de domínios de processo)</h2>
+            <p>Essas funcionalidades são agrupadas em ciclos de vida da TI e ajudam na gestão completa
+            dos serviços de tecnologia, atualmente estamos na 
+            quinta versão do framework, que é formado por quatro funcionalidades,
+            são elas:</p>
+            <br>
+            <p><strong>1️⃣ Planejar e Organizar (PO)</strong> Envolve a definição da estratégia de TI, estrutura organizacional, políticas e processos. O foco é garantir que a TI 
+            esteja alinhada com os objetivos do negócio.<br>
+            <strong>Exemplo:</strong> Criar um plano estratégico de TI alinhado ao crescimento da empresa.</p>
+            <p><strong>2️⃣ Adquirir e Implementar (AI)</strong> Trata da aquisição, desenvolvimento ou implementação de soluções de TI. 
+            Inclui também a manutenção e as mudanças necessárias.<br>
+            <strong>Exemplo:</strong> Implantar um novo sistema ERP na empresa com base nas melhores práticas.</p>
+            <p><strong>3️⃣ Entregar e Suportar (DS)</strong> Envolve a entrega dos serviços de TI ao usuário final, garantindo disponibilidade,
+            suporte técnico e segurança da informação.<br>
+            <strong>Exemplo:</strong> Garantir que o sistema esteja funcionando corretamente e com suporte ao usuário.</p>
+            <p><strong>4️⃣ Monitorar e Avaliar (ME)</strong> Refere-se à avaliação contínua da performance da TI, conformidade com leis e políticas e identificação de melhorias.<br>
+            <strong>Exemplo:</strong> Auditorias periódicas nos sistemas e processos de TI.</p>
+            <br><br>
+            <h2>Os 5 Princípios do COBIT</h2>
+            <p><strong>1️⃣ Satisfazer as partes interessadas – </strong>O principal objetivo da governança de TI é atender às necessidades das partes interessadas, equilibrando benefícios, riscos e recursos.</p>
+            <p><strong>2️⃣ Cobrir a organização de ponta a ponta – </strong>A governança de TI deve estar integrada à governança corporativa e abranger toda a organização, garantindo alinhamento estratégico.</p>		
+            <p><strong>3️⃣ Aplicar um framework integrado e único –</strong> O COBIT se conecta com outros frameworks e normas (como ITIL, ISO 27001) para criar um modelo unificado de governança de TI.</p>		
+            <p><strong>4️⃣ Possibilitar uma visão holística –</strong> A abordagem deve considerar vários fatores, como processos, estruturas organizacionais, cultura e tecnologia, para garantir governança eficaz.</p>	
+            <p><strong>5️⃣ Separar governança e gerenciamento – </strong> A governança define direções estratégicas, enquanto o gerenciamento executa ações para cumprir essas direções, garantindo o alinhamento com os objetivos do negócio.</p>
+      <img src="cobit.png" alt="Imagem ilustrativa do COBIT">
+    </div>
+
+    <div class="section-container section">
+      <h2>🧱 Componentes do COBIT</h2>
+      <table>
+        <thead>
+          <tr><th>Componente</th><th>Descrição</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Processos</td><td>Conjunto de atividades organizadas para atingir objetivos de governança e gestão.</td></tr>
+          <tr><td>Estruturas Organizacionais</td><td>Entidades e papéis que tomam decisões e possuem responsabilidades.</td></tr>
+          <tr><td>Fluxos de Informação</td><td>Dados e relatórios usados para tomar decisões estratégicas e operacionais.</td></tr>
+          <tr><td>Cultura, Ética e Comportamento</td><td>Valores e atitudes que moldam o comportamento nas atividades de TI.</td></tr>
+          <tr><td>Pessoas, Habilidades e Competências</td><td>Capacitações necessárias para executar e apoiar a governança e gestão de TI.</td></tr>
+          <tr><td>Serviços, Infraestrutura e Aplicações</td><td>Recursos tecnológicos que suportam os processos e operações da TI.</td></tr>
+          <tr><td>Políticas, Procedimentos e Documentação</td><td>Regras formais e instruções para orientar a execução de atividades.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="fade" onclick="window.location.href='index.html';">Home</button>
+  </main>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.section, .fade').forEach(elem => {
+      observer.observe(elem);
+    });
+  </script>
+</body>
+</html>

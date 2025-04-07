@@ -1,0 +1,131 @@
+/* estilo.css */
+
+/* Fonte e reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.neon-background {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Cabeçalho */
+.header-glow {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-glow h1 {
+  font-size: 2.5rem;
+  color: #c77dff;
+  text-shadow: 0 0 10px #c77dff, 0 0 20px #9d4edd;
+}
+
+.header-glow p {
+  font-size: 1.2rem;
+  color: #ffffffcc;
+}
+
+/* Seções principais */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.glow-box {
+  background: rgba(50, 0, 90, 0.2);
+  border: 1px solid #9d4edd;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #9d4edd33;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #c77dffaa;
+}
+
+.glow-box h2 {
+  color: #c77dff;
+  margin-bottom: 1rem;
+}
+
+.glow-box ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.glow-box p {
+  margin-top: 1rem;
+}
+
+/* Tabela neon */
+.neon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #1a1a1a;
+}
+
+.neon-table th,
+.neon-table td {
+  border: 1px solid #9d4edd;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.neon-table th {
+  background-color: #2d006b;
+  color: #ffffff;
+  text-shadow: 0 0 5px #9d4edd;
+}
+
+.neon-table td {
+  background-color: #110022;
+  color: #dddddd;
+}
+
+.neon-table tr:hover {
+  background-color: #290042;
+  transition: background-color 0.3s ease;
+}
+
+/* Rodapé */
+.footer-glow {
+  margin-top: 3rem;
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+/* Animações */
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #c77dff, 0 0 20px #9d4edd;
+  }
+  50% {
+    text-shadow: 0 0 15px #c77dff, 0 0 30px #9d4edd;
+  }
+button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #9d4edd, #7b2cbf);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s;
+}

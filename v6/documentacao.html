@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guia de Hospedagem no GitHub</title>
+          <link rel="stylesheet" href="documentacao.css">
+		      <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" />
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1>Configuração e hospedagem no GitHub</h1>
+
+    <div class="section">
+      <h2>1. Criando uma Conta no GitHub</h2>
+      <p>Para começar a hospedar os códigos do seu site no GitHub, o primeiro passo é criar uma conta. Siga os passos abaixo:</p>
+      <ol>
+        <li>Acesse o site oficial do GitHub: <a href="https://github.com" target="_blank">https://github.com</a>.</li>
+        <li>Clique na opção "Sign Up" (Inscrever-se) para criar uma nova conta.</li>
+        <li>
+          Preencha o formulário de cadastro com as informações solicitadas:
+          <ul>
+            <li>Email: Insira um endereço de e-mail válido.</li>
+            <li>Senha: Crie uma senha segura.</li>
+            <li>Username: Escolha um nome de usuário único, que será usado para identificá-lo no GitHub.</li>
+          </ul>
+        </li>
+        <li>Você receberá um código de confirmação no seu e-mail. Insira esse código para confirmar seu cadastro.</li>
+        <li>Após a confirmação, você estará pronto para usar sua conta do GitHub.</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>2. Criando um Repositório no GitHub</h2>
+      <p>Após criar a conta no GitHub, é hora de criar um novo repositório, onde serão armazenados os códigos do seu site. Siga os passos abaixo:</p>
+      <ol>
+        <li>No site do GitHub, clique no ícone de "+" no canto superior direito e selecione "New Repository".</li>
+        <li>
+          Preencha as seguintes informações:
+          <ul>
+            <li>Nome do Repositório: por exemplo, "nosso-site".</li>
+            <li>Descrição: opcional, mas recomendável.</li>
+            <li>Visibilidade: selecione "Public".</li>
+            <li>Marque a opção "Initialize with a README".</li>
+          </ul>
+        </li>
+        <li>Clique em "Create Repository".</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>3. Hospedando Arquivos e Códigos das Páginas do Site no GitHub</h2>
+      <p>Agora você pode adicionar arquivos ao repositório diretamente pela interface web do GitHub:</p>
+
+      <h3>3.1. Organizando os Arquivos por Pastas</h3>
+      <ol>
+        <li>Clique em "Add file" &gt; "Create new file".</li>
+        <li>Para criar a pasta HTML e o arquivo index.html: digite <code>HTML/index.html</code>.</li>
+        <li>Adicione o conteúdo do arquivo no editor que aparece abaixo.</li>
+        <li>Adicione uma descrição e clique em "Commit new file".</li>
+      </ol>
+
+      <h3>3.2. Repetindo o Processo</h3>
+      <p>Repita os passos para outros arquivos (CSS, JavaScript, imagens, etc), organizando-os em suas respectivas pastas.</p>
+    </div>
+
+    <button onclick="window.location.href='index.html';">Home</button>
+  </div>
+
+  <script>
+    // Aplica animação nas seções ao carregar a página
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".section");
+      sections.forEach((section, index) => {
+        setTimeout(() => {
+          section.classList.add("show");
+        }, 200 * index);
+      });
+    });
+  </script>
+</body>
+
+</html>
