@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuvem</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <header class="s-header" id="header-timeline">
+    <div class="row">
+      <div class="s-header__logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Homepage">
+        </a>
+      </div>
+
+<body id="top">
+
+  <header class="s-header" id="header-timeline">
+    <div class="row">
+
+      <nav class="s-header__nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a class="current" href="timeline.html">Timeline</a></li>
+          <li><a class="current" href="diretrizes.html">Diretrizes Nist</a></li>
+          <li><a class="current" href="monitoramento.html">Monitoramento</a></li>
+          <li><a class="current" href="documentacao.html">Doc</a></li>
+          <li><a class="current" href="github.html">GitHub</a></li>
+          <li><a class="current" href="mysql.html">Mysql</a></li>
+          <li><a class="current" href="cobit.html">Cobit</a></li>
+          <li><a class="current" href="iso27001.html">ISO/IEC</a></li>
+          <li><a class="current" href="framework.html">Framework</a></li>
+          <li class="current"><a href="nuvem.html">Nuvem</a></li>
+          <li><a class="current" href="engenharia-social.html">E.S</a></li>
+
+
+        </ul>
+      </nav>
+      <a class="s-header__menu-toggle" href="#0" title="Menu">
+        <span class="s-header__menu-icon"></span>
+      </a>
+    </div>
+  </header>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #9d4edd;
+      margin-bottom: 40px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: #9d4edd;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      max-width: 900px;
+      border-collapse: collapse;
+      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
+    }
+
+    th,
+    td {
+      border: 1px solid #444;
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1a1a1a;
+      color: #9d4edd;
+    }
+
+    td {
+      background-color: #111;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(157, 78, 221, 0.3);
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.7s ease;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-container {
+      margin-bottom: 50px;
+      padding: 30px;
+      border-radius: 16px;
+      transition: box-shadow 0.4s ease, transform 0.3s ease;
+      background-color: #1a1a1a;
+    }
+
+    .section-container:hover {
+      box-shadow: 0 0 25px #9d4edd;
+      transform: scale(1.01);
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      background-color: #4a148c;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #6a1b9a;
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    button.fade {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    button.fade.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  </head>
+
+  <body>
+    <h1 class="section">Principais Riscos de Segurança na Nuvem</h1> </br>
+
+
+    <main>
+      <div class="section-container section">
+        <h2>1. Exposição de Dados Sensíveis</h2>
+        <p> A exposição de dados sensíveis ocorre quando informações pessoais ou profissionais são divulgadas sem a
+          devida proteção. Isso pode acontecer por falhas de segurança,
+          como criptografia inadequada ou armazenamento inseguro. </p> </br>
+        <p> </p>
+        <p>O que é: Acesso não autorizado a informações confidenciais.</p>
+        <p> Como acontece: Má configuração de armazenamento, falta de criptografia, vulnerabilidades.</p>
+        <p> Consequências: Vazamento de dados, multas legais, danos à reputação.</p>
+        <h2 class="texto">Consequências </h2>
+        <p> 🔐 Violação da privacidade</p>
+        <p> 🔐 Danos à vida pessoal, profissional e social </p>
+        <p> 🔐 Danos financeiros e à reputação</p>
+        <p> 🔐 Sanções para as organizações, como multas, suspensão do banco de dados ou proibição de atividade</p>
+
+        <h2 class="texto">Como evitar </h2>
+        <p> 🔐 Criptografar dados sensíveis</p>
+        <p> 🔐 Verificar se os dados estão sendo transmitidos de forma segura</p>
+        <p> 🔐 Proteger dispositivos portáteis com senhas fortes</p>
+        <p> 🔐 Fazer backup regularmente</p>
+      </div>
+
+
+
+      <div class="section-container section">
+        <h2 class="texto">2. Credenciais Comprometidas</h2>
+        <p>Credenciais comprometidas são senhas ou outras informações de login que foram obtidas de forma não
+          autorizada. São uma ameaça grave que pode levar a prejuízos financeiros, danos à reputação e problemas legais.
+        </p>
+
+        <p>O que é: Quando atacantes conseguem acessar a nuvem com logins válidos.</p>
+        <p>Como acontece: Senhas fracas, phishing, ausência de MFA</p>
+        <p> Consequências: Controle indevido da conta, sequestro de dados, sabotagem.</p>
+
+        <h2 class="texto">Consequências </h2>
+        <p> 🔐 Controle total da conta por invasores</p>
+        <p> 🔐 Manipulação ou exclusão de dados</p>
+        <p> 🔐 Implantação de malwares</p>
+
+        <h2 class="texto">Como Evitar </h2>
+        <p> 🔐 Implemente Políticas de Expiração e Rotação de Senhas</p>
+        <p> 🔐 Evite o Uso de Contas Compartilhadas</p>
+        <p> 🔐 Monitore Atividades e Acessos Suspeitos</p>
+
+
+        <h2 class="texto">
+      </div>
+      <div class="section-container section">
+        <h2 class="texto">3. Ataques de Negação de Serviço (DDoS)</h2>
+        <p>Um ataque DDoS (Distributed Denial of Service) tenta derrubar um sistema, site ou serviço online ao
+          sobrecarregá-lo com um volume enorme de acessos simultâneos. </p>
+        <h2 class="texto">Consequências</h2>
+        <p> 🔐 Queda ou lentidão extrema do sistema</p>
+        <p> 🔐 Interrupção de serviços</p>
+        <p> 🔐 Perda financeira e de credibilidade</p>
+        <br>
+        <h2 class="texto">Como evitar</h2>
+        <p> 🔐 Usar firewall com proteção DDoS</p>
+        <p> 🔐 Configurar balanceadores de carga (load balancers)</p>
+        <p> 🔐 Contratar serviços de mitigação (ex: Cloudflare, AWS Shield)</p>
+
+        <h2 class="texto">
+      </div>
+      <div class="section-container section">
+        <h2 class="texto">4. Erros de Configuração</h2>
+        <p>Erros de configuração ocorrem quando serviços ou recursos na nuvem são mal configurados,
+          o que pode deixar sistemas vulneráveis ou dados expostos.</p>
+        <h2 class="texto">Consequências</h2>
+        <p> 🔐 Vazamento de dados sensíveis</p>
+        <p> 🔐 Invasões e controle indevido dos sistemas</p>
+        <p> 🔐 Multas por não conformidade com leis (LGPD, GDPR etc.)</p>
+        <br>
+        <h2 class="texto">Como evitar</h2>
+        <p> 🔐 Aplique o princípio do menor privilégio.</p>
+        <p> 🔐 Faça revisões periódicas de segurança e auditorias.</p>
+        <p> 🔐 Implemente escaneamento de vulnerabilidades e análise de postura.</p>
+
+        <h2 class="texto">
+      </div>
+
+
+      <script>
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            }
+          });
+        }, {
+          threshold: 0.1
+        });
+
+        document.querySelectorAll('.section, .fade').forEach(elem => {
+          observer.observe(elem);
+        });
+      </script>
+
+
+
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+  </body>
+
+</html>

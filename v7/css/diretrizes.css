@@ -1,0 +1,116 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    --content-padding-left: 18rem;
+    --content-padding-right: 18rem;
+    padding-top: calc(3 * 3.2rem);
+    padding-bottom: calc(4 * 3.2rem);
+    background-color: #1e1e2e;
+    min-height: 800px;
+}
+
+
+.diretrizes {
+    padding-bottom: calc(2.5 * 3.2rem);
+    margin-bottom: calc(3.5 * 3.2rem);
+    border-bottom: 1px solid #e0e0e0;;
+}
+
+.diretrizes:last-child {
+    padding-bottom: calc(2 * 3.2rem);
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.diretrizes-content {
+    padding-left: 17rem;
+    padding-right: 17rem;
+}
+
+.diretrizes h1, h2, h3 {
+    color: #ececec;
+    margin: 5px 0 10px 0;
+    padding: 0;
+}
+
+.diretrizes p {
+    color: #ececec;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.section {
+    background: #2c2c3a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    gap: 10px;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+#header-diretrizes {
+    background-color: #13131f;
+}
+
+.header-diretrizes .row {
+    justify-content: flex-start;
+} 
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    padding-top: calc(5 * 3.2rem);
+    padding-bottom: calc(4 * 3.2rem);
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+h1,
+h2,
+h3 {
+    color: #9b59b6;
+    margin-top: 0;
+}
+
+p {
+    /* text-align: justify; */
+    margin-bottom: .4rem;
+}
+
+.section {
+    background: #2c2c3a;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    border-radius: 8px;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e1e2e;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.current {
+    background-color: rgb(91, 28, 173);
+}

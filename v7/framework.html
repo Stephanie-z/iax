@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Framework</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/vendor.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #9d4edd;
+      margin-bottom: 40px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: #9d4edd;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      max-width: 900px;
+      border-collapse: collapse;
+      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
+    }
+
+    th,
+    td {
+      border: 1px solid #444;
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1a1a1a;
+      color: #9d4edd;
+    }
+
+    td {
+      background-color: #111;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(157, 78, 221, 0.3);
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.7s ease;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-container {
+      margin-bottom: 50px;
+      padding: 30px;
+      border-radius: 16px;
+      transition: box-shadow 0.4s ease, transform 0.3s ease;
+      background-color: #1a1a1a;
+    }
+
+    .section-container:hover {
+      box-shadow: 0 0 25px #9d4edd;
+      transform: scale(1.01);
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      background-color: #4a148c;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #6a1b9a;
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    button.fade {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    button.fade.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="s-header__nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a class="current" href="timeline.html">Timeline</a></li>
+        <li><a class="current" href="diretrizes.html">Diretrizes Nist</a></li>
+        <li><a class="current" href="monitoramento.html">Monitoramento</a></li>
+        <li><a class="current" href="documentacao.html">Doc</a></li>
+        <li><a class="current" href="github.html">GitHub</a></li>
+        <li><a class="current" href="mysql.html">Mysql</a></li>
+        <li><a class="current" href="cobit.html">Cobit</a></li>
+        <li><a class="current" href="iso27001.html">ISO/IEC</a></li>
+        <li class="current"><a href="framework.html">Framework</a></li>
+        <li><a class="current" href="nuvem.html">Nuvem</a></li>
+        <li><a class="current" href="engenharia-social.html">E.S</a></li>
+      </ul>
+    </nav>
+    <a class="s-header__menu-toggle" href="#0" title="Menu">
+      <span class="s-header__menu-icon"></span>
+    </a>
+  </header>
+
+  <div class="section">
+    <h1>IG Security Cyber</h1> </br>
+    <p>Este framework combina uma série de boas práticas, focando em cinco áreas essenciais: Planejamento e Estratégia
+      de
+      TI, Gestão de Riscos e Proteção de Dados, Monitoramento e Detecção de Ameaças,
+      Resposta a Incidentes e Recuperação e Melhoria Contínua </p> </br>
+  </div>
+
+
+  <main>
+    <div class="section-container section">
+      <h2>1. Planejamento e Estratégia de TI</h2>
+      <p>Objetivo : Garantir que a TI esteja alinhada com os objetivos da organização e que os recursos
+        críticos estejam protegidos desde o início.</p>
+      <h2 class="texto">Práticas</h2>
+
+      <p>✅ Alinhar TI com os objetivos de negócios: A estratégia de TI deve apoiar as metas da empresa
+        e criar valor para a organização.</p>
+      <p>✅ Criar políticas claras de governança e segurança da informação: Definir responsabilidades,
+        processos e controles relacionados à governança de TI e proteção de dados.</p>
+      <p>✅ Identificar ativos e recursos críticos: : Mapear sistemas, dados e outros recursos
+        essenciais para a operação da organização e protegê-los adequadamente.</p>
+      <h2 class="texto">Ação Recomendada</h2>
+      <p>✅ Desenvolver um plano de TI que esteja em sintonia com os objetivos estratégicos da organização, incluindo a
+        proteção de informações e infraestrutura essenciais.</p>
+    </div>
+
+
+
+    <div class="section-container section">
+      <h2 class="texto">2. Gestão de Riscos e Proteção de Dados</h2>
+      <p>Objetivo: Identificar, avaliar e mitigar riscos, protegendo dados e sistemas. </p>
+      <h2 class="texto">Práticas</h2>
+
+      <p>✅Identificar e gerenciar riscos: Avaliar continuamente os riscos cibernéticos e implementar medidas para
+        mitigá-los.</p>
+      <p>✅Aplicar controles de segurança robustos: Usar criptografia, autenticação multifatorial, controle de acesso e
+        outras medidas de segurança para proteger informações sensíveis. </p>
+      <p>✅Proteger dados e ativos críticos: Garantir que os dados, sistemas e informações críticas sejam protegidos
+        contra acesso não autorizado e ameaças externas.</p>
+      <br>
+      <h2 class="texto">Ação Recomendada</h2>
+      <p>Implementar uma abordagem contínua de gestão de riscos e adotar medidas de segurança que cubram todos os pontos
+        críticos da organização.</p>
+      <h2 class="texto">
+    </div>
+
+    <div class="section-container section">
+      <h2 class="texto">3. Monitoramento e Detecção de Ameaças</h2>
+      <p>Objetivo: Detectar rapidamente possíveis ameaças e anomalias nos sistemas para agir de maneira preventiva e
+        minimizar danos. </p>
+      <h2 class="texto">Práticas</h2>
+
+      <p>✅Monitoramento contínuo: Acompanhar em tempo real as redes, sistemas e dados para identificar atividades
+        suspeitas ou anômalas.</p>
+      <p>✅Detecção de intrusões e falhas de segurança: Usar ferramentas de monitoramento para identificar rapidamente
+        possíveis brechas de segurança e ações maliciosas. </p>
+      <p>✅Avaliação de segurança: Realizar avaliações periódicas de segurança para verificar a eficácia dos controles
+        implementados.</p>
+      <br>
+      <h2 class="texto">Ação Recomendada</h2>
+      <p>Implementar soluções de monitoramento em tempo real e criar alertas automáticos para identificar rapidamente
+        incidentes de segurança.</p>
+      <h2 class="texto">
+    </div>
+
+    <div class="section-container section">
+      <h2 class="texto">4. Resposta a Incidentes</h2>
+      <p>Objetivo: Responder rapidamente a incidentes de segurança, minimizando os danos e restaurando as operações da
+        organização.</p>
+      <h2 class="texto">Práticas</h2>
+      <p>✅Planejamento de resposta a incidentes: Desenvolver e testar planos detalhados para responder a diferentes
+        tipos de incidentes de segurança cibernética. </p>
+      <p>✅Respostas rápidas e coordenadas: Garantir que a equipe de TI e segurança esteja preparada para lidar com
+        incidentes de forma eficiente.</p>
+      <p>✅Análise pós-incidente: Após a resposta, realizar uma análise para entender o que ocorreu, quais falhas
+        ocorreram e como melhorar a resposta futura.</p>
+      <br>
+      <h2 class="texto">Ação Recomendada</h2>
+      <p>Criar e testar um plano de resposta a incidentes cibernéticos que seja capaz de minimizar o impacto de qualquer
+        ameaça à organização.
+      </p>
+      <h2 class="texto">
+    </div>
+
+    <div class="section-container section">
+      <h2 class="texto">5. Recuperação e Melhoria Contínua</h2>
+      <p>Objetivo: Recuperar os sistemas e dados após um incidente de segurança e melhorar continuamente os processos de
+        segurança para reduzir o risco de futuras ameaças.</p>
+      <h2 class="texto">Práticas</h2>
+
+      <p>✅Recuperação de sistemas e dados: Garantir que haja uma estratégia de recuperação de desastres bem definida
+        para restaurar os sistemas e dados críticos rapidamente após um incidente. </p>
+      <p>✅ Análise e melhorias contínuas: Após a recuperação, revisar os processos e controles de segurança,
+        implementando melhorias para fortalecer a organização contra futuras ameaças.</p>
+      <p>✅ Documentação de lições aprendidas: Registrar as lições aprendidas de cada incidente para melhorar a resposta
+        e a prevenção em incidentes futuros.</p>
+      <br>
+      <h2 class="texto">Ação Recomendada</h2>
+      <p>Estabelecer planos de recuperação e garantir que a organização esteja sempre aprimorando suas práticas de
+        segurança com base em novos desafios e ameaças.</p>
+      <h2 class="texto">
+    </div>
+
+    <div class="section-container section">
+      <h2>Tabela Comparativa</h2>
+      <table>
+        <thead>
+          <th>Área</th>
+          <th>Práticas</th>
+          <th>Objetivo</th>
+          <th>Ação Recomendada</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Planejamento e Estratégia de TI</td>
+            <td>Alinhar TI aos objetivos, criar políticas, proteger recursos</td>
+            <td>Alinhar TI aos objetivos e proteger dados</td>
+            <td>Criar plano de TI alinhado</td>
+          </tr>
+          <tr>
+            <td>Gestão de Riscos e Proteção de Dados</td>
+            <td>Identificar riscos, aplicar controles, proteger dados</td>
+            <td>Proteger dados da organização</td>
+            <td>Gestão contínua de riscos</td>
+          </tr>
+          <tr>
+            <td>Monitoramento e Detecção</td>
+            <td>Monitoramento, detecção de falhas, avaliação</td>
+            <td>Detectar ameaças e falhas</td>
+            <td>Monitoramento em tempo real</td>
+          </tr>
+          <tr>
+            <td>Resposta a Incidentes</td>
+            <td>Planejamento, resposta coordenada, análise</td>
+            <td>Minimizar danos</td>
+            <td>Testar plano de resposta</td>
+          </tr>
+          <tr>
+            <td>Recuperação e Melhoria</td>
+            <td>Recuperação, análise, documentação</td>
+            <td>Melhorar segurança continuamente</td>
+            <td>Estabelecer planos de recuperação</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.section, .fade').forEach(elem => {
+      observer.observe(elem);
+    });
+  </script>
+
+</body>
+
+</html>

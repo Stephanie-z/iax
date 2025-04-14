@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guia de Hospedagem no GitHub</title>
+          <link rel="stylesheet" href="documentacao.css">
+		      <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" />
+  
+</head>
+
+<body>
+  <header class="s-header" id="header-timeline">
+    <div class="row">
+      <!-- <div class="s-header__logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Homepage">
+        </a>
+      </div> -->
+      <nav class="s-header__nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+           <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="diretrizes.html">Diretrizes</a></li>
+          <li><a href="monitoramento.html">Monitoramento</a></li>
+          <li class="current"><a href="documentacao.html">Doc</a></li>
+          <li><a href="github.html">GitHub</a></li>
+          <li><a href="mysql.html">MySQL</a></li>
+          <li><a href="cobit.html">Cobit</a></li>
+          <li><a href="iso27001.html">ISO 27001</a></li>
+          <li><a href="framework.html">Framework</a></li>
+          <li><a href="nuvem.html">Nuvem</a></li>
+          <li><a href="engenharia-social.html">E. S.</a></li> 
+        </ul>
+      </nav>
+      <a class="s-header__menu-toggle" href="#0" title="Menu">
+        <span class="s-header__menu-icon"></span>
+      </a>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Configuração e hospedagem no GitHub</h1>
+
+    <div class="section">
+      <h2>1. Criando uma Conta no GitHub</h2>
+      <p>Para começar a hospedar os códigos do seu site no GitHub, o primeiro passo é criar uma conta. Siga os passos abaixo:</p>
+      <ol>
+        <li>Acesse o site oficial do GitHub: <a href="https://github.com" target="_blank">https://github.com</a>.</li>
+        <li>Clique na opção "Sign Up" (Inscrever-se) para criar uma nova conta.</li>
+        <li>
+          Preencha o formulário de cadastro com as informações solicitadas:
+          <ul>
+            <li>Email: Insira um endereço de e-mail válido.</li>
+            <li>Senha: Crie uma senha segura.</li>
+            <li>Username: Escolha um nome de usuário único, que será usado para identificá-lo no GitHub.</li>
+          </ul>
+        </li>
+        <li>Você receberá um código de confirmação no seu e-mail. Insira esse código para confirmar seu cadastro.</li>
+        <li>Após a confirmação, você estará pronto para usar sua conta do GitHub.</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>2. Criando um Repositório no GitHub</h2>
+      <p>Após criar a conta no GitHub, é hora de criar um novo repositório, onde serão armazenados os códigos do seu site. Siga os passos abaixo:</p>
+      <ol>
+        <li>No site do GitHub, clique no ícone de "+" no canto superior direito e selecione "New Repository".</li>
+        <li>
+          Preencha as seguintes informações:
+          <ul>
+            <li>Nome do Repositório: por exemplo, "nosso-site".</li>
+            <li>Descrição: opcional, mas recomendável.</li>
+            <li>Visibilidade: selecione "Public".</li>
+            <li>Marque a opção "Initialize with a README".</li>
+          </ul>
+        </li>
+        <li>Clique em "Create Repository".</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>3. Hospedando Arquivos e Códigos das Páginas do Site no GitHub</h2>
+      <p>Agora você pode adicionar arquivos ao repositório diretamente pela interface web do GitHub:</p>
+
+      <p style="margin-top: 10px; font-weight: 600;">Organizando os Arquivos por Pastas</p>
+      <ol>
+        <li>Clique em "Add file" &gt; "Create new file".</li>
+        <li>Para criar a pasta HTML e o arquivo index.html: digite <code>HTML/index.html</code>.</li>
+        <li>Adicione o conteúdo do arquivo no editor que aparece abaixo.</li>
+        <li>Adicione uma descrição e clique em "Commit new file".</li>
+      </ol>
+
+      <p style="margin-top: 10px; font-weight: 600;">Repetindo o Processo</p>
+      <p>Repita os passos para outros arquivos (CSS, JavaScript, imagens, etc), organizando-os em suas respectivas pastas.</p>
+    </div>
+
+    <!-- <button onclick="window.location.href='index.html';">Home</button> -->
+  </div>
+
+  <script>
+    // Aplica animação nas seções ao carregar a página
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".section");
+      sections.forEach((section, index) => {
+        setTimeout(() => {
+          section.classList.add("show");
+        }, 200 * index);
+      });
+    });
+  </script>
+</body>
+
+</html>

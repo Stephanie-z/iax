@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mysql.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Implementação do Banco de Dados MySQL</title>
+    <p>
+
+</head>
+
+<body>
+    <header class="s-header" id="header-timeline">
+        <div class="row">
+          <!-- <div class="s-header__logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Homepage">
+            </a>
+          </div> -->
+          <nav class="s-header__nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+               <li><a href="diretrizes.html">Diretrizes</a></li>
+               <li><a href="monitoramento.html">Monitoramento</a></li>
+               <li><a href="documentacao.html">Doc</a></li>
+               <li><a href="github.html">GitHub</a></li>
+               <li class="current"><a href="mysql.html">MySQL</a></li>
+               <li><a href="cobit.html">Cobit</a></li>
+               <li><a href="iso27001.html">ISO 27001</a></li>
+               <li><a href="framework.html">Framework</a></li>
+               <li><a href="nuvem.html">Nuvem</a></li>
+               <li><a href="engenharia-social.html">E. S.</a></li> 
+            </ul>
+          </nav>
+          <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+          </a>
+        </div>
+      </header>
+    <div class="container">
+        <h1>Implementação do Banco de Dados MySQL</h1>
+        <p>O MySQL é um dos bancos de dados mais utilizados no mundo, essencial para o armazenamento e gestão eficiente
+            de dados em sites e aplicativos. Sua popularidade se deve à sua robustez, facilidade de uso e alto
+            desempenho. Implementar o
+            MySQL permite que empresas e desenvolvedores criem soluções escaláveis, seguras e de alta performance,
+            garantindo que grandes volumes de dados sejam acessados rapidamente e de forma confiável. A escolha do MySQL
+            é ideal para quem busca um banco de dados aberto, flexível e com ampla comunidade de suporte.</p>
+
+        <div class="section">
+            <h2>1. Instalação do MySQL</h2>
+            <h3>No Linux (Ubuntu/Debian)</h3>
+            <pre>
+sudo apt update && sudo apt upgrade -y
+sudo apt install mysql-server -y
+sudo systemctl start mysql
+sudo systemctl enable mysql
+sudo mysql_secure_installation</pre>
+            <h3>No Windows</h3>
+            <p>Baixe o instalador do site oficial: <a href="https://dev.mysql.com/downloads/installer/">MySQL
+                    Installer</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Configuração Inicial</h2>
+            <pre>
+sudo mysql -u root -p
+CREATE DATABASE minha_loja;
+CREATE USER 'usuario_loja'@'localhost' IDENTIFIED BY 'senha_segura';
+GRANT ALL PRIVILEGES ON minha_loja.* TO 'usuario_loja'@'localhost';
+FLUSH PRIVILEGES;
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>3. Estruturação do Banco de Dados</h2>
+            <h3>Criação das Tabelas</h3>
+            <pre>
+CREATE TABLE clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    telefone VARCHAR(15),
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+            </pre>
+            <pre>
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10,2) NOT NULL,
+    estoque INT NOT NULL
+);
+            </pre>
+            <pre>
+CREATE TABLE pedidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cliente_id INT,
+    data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    total DECIMAL(10,2),
+    FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+);
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>4. Manipulação de Dados</h2>
+            <h3>Inserção de Dados</h3>
+            <pre>
+INSERT INTO clientes (nome, email, telefone) 
+VALUES ('João Silva', 'joao@email.com', '11999999999');
+            </pre>
+            <pre>
+INSERT INTO produtos (nome, descricao, preco, estoque) 
+VALUES ('Camisa Polo', 'Camisa de algodão', 59.90, 100);
+            </pre>
+            <h3>Consulta de Dados</h3>
+            <pre>
+SELECT * FROM clientes;
+SELECT nome, preco FROM produtos WHERE preco > 50;
+            </pre>
+            <h3>Atualização de Dados</h3>
+            <pre>
+UPDATE produtos SET preco = 49.90 WHERE nome = 'Camisa Polo';
+            </pre>
+            <h3>Exclusão de Dados</h3>
+            <pre>
+DELETE FROM clientes WHERE id = 1;
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>5. Melhores Práticas</h2>
+            <h3>Segurança</h3>
+            <ul>
+                <li>Não use o usuário root para conexões da aplicação.</li>
+                <li>Utilize senhas fortes e autenticação de dois fatores.</li>
+                <li>Restrinja acessos remotos ao banco de dados.</li>
+            </ul>
+            <h3>Otimização</h3>
+            <ul>
+                <li>Crie índices para otimizar consultas.</li>
+                <li>Use normalização para evitar redundância de dados.</li>
+                <li>Monitore logs de erro para detectar problemas.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. Backup e Restauração</h2>
+            <h3>Backup</h3>
+            <pre>
+mysqldump -u root -p minha_loja > backup.sql
+            </pre>
+            <h3>Restauração</h3>
+            <pre>
+mysql -u root -p minha_loja < backup.sql
+            </pre>
+        </div>
+        <button onclick="window.location.href='index.html';">Home</button>
+
+    </div>
+</body>
+
+</html>
